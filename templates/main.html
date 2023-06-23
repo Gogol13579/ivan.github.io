@@ -1,0 +1,824 @@
+﻿<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+
+</head>
+<body>
+<div class="container">
+  <div class="main">
+    <div class="row caption">
+        <div class="col">
+            <b>Тест Герчикова (типы мотивации)</b>
+        </div>
+    </div>
+    <div id="main_div">
+      <form id="my_form">
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">1. Что Вы цените в своей работе?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-1-1">
+                  <label class="form-check-label" for="question-1-1">
+                    Что я в основном сам решаю, что и как мне делать.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-1-2">
+                  <label class="form-check-label" for="question-1-2">
+                    Что она дает мне возможность проявить то, что я знаю и умею.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-1-3">
+                  <label class="form-check-label" for="question-1-3">
+                    Что я чувствую себя полезным и нужным.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-1-4">
+                  <label class="form-check-label" for="question-1-4">
+                    Что мне за нее относительно неплохо платят.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-1-5">
+                  <label class="form-check-label" for="question-1-5">
+                    Особенно ничего не ценю,но эта работа мне хорошо знакома и привычна.
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">2. Какое выражение (из перечисленных ниже) Вам подходит более всего?<br>Дайте только один ответ:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-2-1">
+                  <label class="form-check-label" for="question-2-1">
+                     Я хочу обеспечить своим трудом себе и своей семье приличный доход.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-2-2">
+                  <label class="form-check-label" for="question-2-2">
+                    В своей работе я полный хозяин.
+                  </label>
+                </div>
+                   <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-2-3">
+                  <label class="form-check-label" for="question-2-3">
+                    У меня достаточно знаний и опыта, чтобы справиться с любыми трудностями в моей работе.
+                  </label>
+                </div>
+                   <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-2-4">
+                  <label class="form-check-label" for="question-2-4">
+                    Я ценный, незаменимый для организации работник.
+                  </label>
+                </div>
+                   <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-2-5">
+                  <label class="form-check-label" for="question-2-5">
+                    Я всегда выполняю то, что от меня требуют.
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">3.  Как вы предпочитаете работать?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-3-1">
+                  <label class="form-check-label" for="question-3-1">
+                    Предпочитаю делать то, что знакомо, привычно.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-3-2">
+                  <label class="form-check-label" for="question-3-2">
+                    Нужно, чтобы в работе постоянно появлялось что-то новое, чтобы не стоять на месте.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-3-3">
+                  <label class="form-check-label" for="question-3-3">
+                    Чтобы было точно известно, что нужно сделать и что я за это получу.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-3-4">
+                  <label class="form-check-label" for="question-3-4">
+                    Предпочитаю работать под полную личную ответственность.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-3-5">
+                  <label class="form-check-label" for="question-3-5">
+                    Готов(а) делать все, что нужно для организации.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">4. Допустим, что Вам предлагают другую работу в Вашей организации. При каких  условиях Вы бы на это согласились?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-4-1">
+                  <label class="form-check-label" for="question-4-1">
+                    Если предложат намного более высокую зарплату.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-4-2">
+                  <label class="form-check-label" for="question-4-2">
+                     Если другая работа будет более творческой и интересной, чем нынешняя.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-4-3">
+                  <label class="form-check-label" for="question-4-3">
+                    Если новая работа даст мне больше самостоятельности.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-4-4">
+                  <label class="form-check-label" for="question-4-4">
+                    Если это очень нужно для организации.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-4-5">
+                  <label class="form-check-label" for="question-4-5">
+                    При всех обстоятельствах я предпочел (предпочла) бы остаться на той работе, к которой  привык (привыкла).
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+<div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">5. Попробуйте определить, что для Вас означает Ваш заработок?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-5-1">
+                  <label class="form-check-label" for="question-5-1">
+                    Плата за время и усилия, потраченные на выполнение работы.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-5-2">
+                  <label class="form-check-label" for="question-5-2">
+                    Это прежде всего плата за мои знания, квалификацию.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-5-3">
+                  <label class="form-check-label" for="question-5-3">
+                    Оплата за общие результаты деятельности организации.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-5-4">
+                  <label class="form-check-label" for="question-5-4">
+                    Мне нужен гарантированный заработок – пусть небольшой, но чтобы он был.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-5-5">
+                  <label class="form-check-label" for="question-5-5">
+                    Какой бы он ни был, я его заработал(а) сам(а).
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+<div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">Как вы относитесь к перечисленным ниже источникам дохода?<br>Дайте только один ответ в каждом пункте:</label>
+                <br><label for="exampleInputEmail1" class="form-label c1">6. Заработная плата и премии</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-6-1">
+                  <label class="form-check-label" for="question-6-1">
+                    Очень важно.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-6-2">
+                  <label class="form-check-label" for="question-6-2">
+                    Не очень важно.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-6-3">
+                  <label class="form-check-label" for="question-6-3">
+                    Совсем не важно.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+<div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">7. Доплаты за квалификацию</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-7-1">
+                  <label class="form-check-label" for="question-7-1">
+                    Очень важно.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-7-2">
+                  <label class="form-check-label" for="question-7-2">
+                    Не очень важно.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-7-3">
+                  <label class="form-check-label" for="question-7-3">
+                    Совсем не важно.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+<div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">8. Доплаты за тяжелые и вредные условия работы</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-8-1">
+                  <label class="form-check-label" for="question-8-1">
+                    Очень важно.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-8-2">
+                  <label class="form-check-label" for="question-8-2">
+                    Не очень важно.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-8-3">
+                  <label class="form-check-label" for="question-8-3">
+                    Совсем не важно.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">9. Социальные выплаты и льготы, пособия</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-9-1">
+                  <label class="form-check-label" for="question-9-1">
+                    Очень важно.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-9-2">
+                  <label class="form-check-label" for="question-9-2">
+                    Не очень важно.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-9-3">
+                  <label class="form-check-label" for="question-9-3">
+                    Совсем не важно.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+<div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">10. Доходы от капитала, акций</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-10-1">
+                  <label class="form-check-label" for="question-10-1">
+                    Очень важно.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-10-2">
+                  <label class="form-check-label" for="question-10-2">
+                    Не очень важно.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-10-3">
+                  <label class="form-check-label" for="question-10-3">
+                    Совсем не важно.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">11. Любые дополнительные приработки</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-11-1">
+                  <label class="form-check-label" for="question-11-1">
+                    Очень важно.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-11-2">
+                  <label class="form-check-label" for="question-11-2">
+                    Не очень важно.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-11-3">
+                  <label class="form-check-label" for="question-11-3">
+                    Совсем не важно.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">12. Приработки, но не любые, а только по своей специальности</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-12-1">
+                  <label class="form-check-label" for="question-12-1">
+                    Очень важно.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-12-2">
+                  <label class="form-check-label" for="question-12-2">
+                    Не очень важно.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-12-3">
+                  <label class="form-check-label" for="question-12-3">
+                    Совсем не важно.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+<div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">13. Доходы от личного хозяйства, дачного участка и т. п.</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-13-1">
+                  <label class="form-check-label" for="question-13-1">
+                    Очень важно.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-13-2">
+                  <label class="form-check-label" for="question-13-2">
+                    Не очень важно.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-13-3">
+                  <label class="form-check-label" for="question-13-3">
+                    Совсем не важно.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+<div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">14. Выигрыш в лотерею, казино и т. п.</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-14-1">
+                  <label class="form-check-label" for="question-14-1">
+                    Очень важно.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-14-2">
+                  <label class="form-check-label" for="question-14-2">
+                    Не очень важно.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-14-3">
+                  <label class="form-check-label" for="question-14-3">
+                    Совсем не важно.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c1">15. На каких принципах, по-вашему, должны строиться отношения между работником и  организацией?<br>Дайте только один ответ</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-15-1">
+                  <label class="form-check-label" for="question-15-1">
+                    Работник должен относиться к организации как к своему дому, отдавать ей все и вместе переживать трудности и подъемы. Организация должна соответственно оценивать преданность  и труд работника.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-15-2">
+                  <label class="form-check-label" for="question-15-2">
+                    Работник продает организации свой труд, и если ему не дают хорошую цену, он вправе найти  другого покупателя.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-15-3">
+                  <label class="form-check-label" for="question-15-3">
+                    Работник приходит в организацию для самореализации и относится к ней как к месту  реализации своих способностей. Организация должна обеспечивать работнику такую  возможность, извлекать из этого выгоду для себя и на этой основе развиваться.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexcheckboxDefault" id="question-15-4">
+                  <label class="form-check-label" for="question-15-4">
+                    Работник тратит на организацию свои силы, а организация должна взамен гарантировать ему  зарплату и социальные блага.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+<div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">16. Как Вы считаете, почему в процессе работы люди проявляют инициативу, вносят  различные предложения?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-16-1">
+                  <label class="form-check-label" for="question-16-1">
+                    Чувствуют особую ответственность за свою работу.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-16-2">
+                  <label class="form-check-label" for="question-16-2">
+                    Из-за стремления реализовать свои знания и опыт, выйти за установленные работой рамки.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-16-3">
+                  <label class="form-check-label" for="question-16-3">
+                    Чаще всего из-за желания улучшить работу своей организации.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-16-4">
+                  <label class="form-check-label" for="question-16-4">
+                    Чаще всего из-за желания улучшить работу своей организации.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-16-5">
+                  <label class="form-check-label" for="question-16-5">
+                    Хотят заработать, поскольку всякая полезная инициатива должна вознаграждаться.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">17. Какое суждение о коллективной работе Вам ближе?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-17-1">
+                  <label class="form-check-label" for="question-17-1">
+                    Коллектив для меня очень важен, одному хороших результатов не добиться.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-17-2">
+                  <label class="form-check-label" for="question-17-2">
+                    Предпочитаю работать автономно, но чувствую себя так же хорошо, когда работаю вместе  с интересными людьми.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-17-3">
+                  <label class="form-check-label" for="question-17-3">
+                    Мне нужна свобода действий, а коллектив чаще всего эту свободу ограничивает.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-17-4">
+                  <label class="form-check-label" for="question-17-4">
+                    Можно работать и в коллективе, но платить должны по личным результатам.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-17-5">
+                  <label class="form-check-label" for="question-17-5">
+                    Мне нравится работать в коллективе, так как там я среди своих.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">18. Представьте себе, что у Вас появилась возможность стать владельцем Вашей  организации. Воспользуетесь ли Вы этой возможностью?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-18-1">
+                  <label class="form-check-label" for="question-18-1">
+                    Да, так как я смогу участвовать в управлении организацией.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-18-2">
+                  <label class="form-check-label" for="question-18-2">
+                    Да, потому что это может увеличить мой доход.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-18-3">
+                  <label class="form-check-label" for="question-18-3">
+                    Да, так как настоящий работник должен быть совладельцем.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-18-4">
+                  <label class="form-check-label" for="question-18-4">
+                    Вряд ли: на заработке это не скажется, участие в управлении меня не интересует, а работе это помешает.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-18-5">
+                  <label class="form-check-label" for="question-18-5">
+                    Нет, не нужны мне лишние заботы.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">19. Представьте, пожалуйста, что Вы сейчас ищете работу. Вам предлагают несколько работ.  Какую из них Вы выберете?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-19-1">
+                  <label class="form-check-label" for="question-19-1">
+                    Наиболее интересную, творческую.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-19-2">
+                  <label class="form-check-label" for="question-19-2">
+                    Наиболее самостоятельную, независимую.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-19-3">
+                  <label class="form-check-label" for="question-19-3">
+                    За которую больше платят.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-19-4">
+                  <label class="form-check-label" for="question-19-4">
+                    Чтобы за не слишком большие деньги не требовалось особенно «надрываться».
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-19-5">
+                  <label class="form-check-label" for="question-19-5">
+                    Не могу представить, что я уйду из нашей организации.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">20. Что Вы прежде всего учитываете, когда оцениваете успехи другого работника в Вашей  организации?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-20-1">
+                  <label class="form-check-label" for="question-20-1">
+                    Его зарплату, доходы, материальное положение.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-20-2">
+                  <label class="form-check-label" for="question-20-2">
+                    Уровень его профессионализма, квалификации.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-20-3">
+                  <label class="form-check-label" for="question-20-3">
+                    Насколько хорошо он «устроился».
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-20-4">
+                  <label class="form-check-label" for="question-20-4">
+                    Насколько его уважают в организации.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-20-5">
+                  <label class="form-check-label" for="question-20-5">
+                    Насколько он самостоятелен, независим.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label ca">21. Если положение в Вашей организации ухудшится, на какие перемены в Вашей работе и  положении Вы согласитесь ради того, чтобы остаться на работе?<br>Можете дать сколько угодно ответов:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-21-1">
+                  <label class="form-check-label" for="question-21-1">
+                    Освоить новую профессию.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-21-2">
+                  <label class="form-check-label" for="question-21-2">
+                    Работать неполный рабочий день или перейти на менее квалифицированную работу и меньше получать.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-21-3">
+                  <label class="form-check-label" for="question-21-3">
+                    Перейти на менее удобный режим работы.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-21-4">
+                  <label class="form-check-label" for="question-21-4">
+                    Работать более интенсивно.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-21-5">
+                  <label class="form-check-label" for="question-21-5">
+                    Соглашусь просто терпеть, потому что деваться некуда.
+                  </label>
+                  </div>
+                   <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-21-6">
+                  <label class="form-check-label" for="question-21-6">
+                    Скорее всего я просто уйду из этой организации.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+<div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">22. Если Вы руководитель, то что Вас привлекает прежде всего в этом положении?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-22-1">
+                  <label class="form-check-label" for="question-22-1">
+                    Возможность принимать самостоятельные, ответственные решения.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-22-2">
+                  <label class="form-check-label" for="question-22-2">
+                    Возможность принести наибольшую пользу организации.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-22-3">
+                  <label class="form-check-label" for="question-22-3">
+                    Высокий уровень оплаты.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-22-4">
+                  <label class="form-check-label" for="question-22-4">
+                    Возможность организовывать работу других людей.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-22-5">
+                  <label class="form-check-label" for="question-22-5">
+                    Возможность наилучшим образом применить свои знания и умения.
+                  </label>
+                  </div>
+                   <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-22-6">
+                  <label class="form-check-label" for="question-22-6">
+                    Ничего особенно не привлекает, за положение руководителя не держусь.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+<div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label c2">23. Если Вы не являетесь руководителем, то хотели бы Вы им стать?<br>Можете дать один или два варианта ответа:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-23-1">
+                  <label class="form-check-label" for="question-23-1">
+                    Да, поскольку это даст возможность принимать самостоятельные, ответственные решения.
+                  </label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-23-2">
+                  <label class="form-check-label" for="question-23-2">
+                    Не против, если это нужно для пользы дела.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-23-3">
+                  <label class="form-check-label" for="question-23-3">
+                    Да, так как при этом я смогу лучше применить свои знания и умения.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-23-4">
+                  <label class="form-check-label" for="question-23-4">
+                    Да, если это будет должным образом оплачиваться.
+                  </label>
+                  </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-23-5">
+                  <label class="form-check-label" for="question-23-5">
+                    Нет, профессионал может отвечать только за самого себя.
+                  </label>
+                  </div>
+                   <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-23-6">
+                  <label class="form-check-label" for="question-23-6">
+                    Нет, руководство меня не привлекает, а хорошо заработать я могу и на своем месте.
+                  </label>
+                  </div>
+                   <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-23-7">
+                  <label class="form-check-label" for="question-23-7">
+                    Да, чем я хуже других?
+                  </label>
+                  </div>
+                   <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="question-23-8">
+                  <label class="form-check-label" for="question-23-8">
+                    Нет, это слишком большая нагрузка для меня.
+                  </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col d-grid gap-2">
+                  <button type="submit" class="btn btn-outline-primary">Сдать тест</button>
+              </div>
+          </div>
+      </form>
+      </div>
+    </div>
+  </div>
+<div>fggdfg</div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="{{url_for('static',filename='js/js.js')}}"></script>
+</html>
